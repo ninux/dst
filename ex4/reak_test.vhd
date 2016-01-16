@@ -9,7 +9,7 @@ entity reak_test is
         rst     : in    std_logic;
         clk     : in    std_logic;
         ROT_C   : in    std_logic;
-        LED     : out   std_logic_vector(7 downto 0);
+        LED     : out   std_logic_vector(7 downto 0)
     );
 end entity reak_test;
 
@@ -18,7 +18,7 @@ architecture A of reak_test is
     -- constants
     DELAY_TIME  : unsigned(26 downto 0) := to_unsigned(2*CLK_FRQ - 1, 27);
     CSC_TIME    : unsigned(18 downto 0) := to_unsigned(CLK_FRQ/100 - 1, 19);
-    RAND_TIME   : unsigned(18 downto 0) := to_unsigned(CLK_FRQ/200 - 1, 19);
+    RAND_TIME   : unsigned(18 downto 0) := to_unsigned(CLK_FRQ/200 - 1, 19)
 
     -- signals
     led_out     : std_logic_vector(7 downto 0);
