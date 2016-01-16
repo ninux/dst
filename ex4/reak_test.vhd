@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 
 entity reak_test is
     generic (
-        CLK_FRQ : integer := 50_000_000;
+        CLK_FRQ : integer := 50_000_000
     );
     port (
         rst     : in    std_logic;
