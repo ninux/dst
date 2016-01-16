@@ -6,7 +6,7 @@ entity MyNand is
 	port (
 		u	: in	std_logic;
 		v	: in	std_logic;
-		w	: out	std_logic;	
+		w	: out	std_logic	
 	);
 end entity MyNand;
 
@@ -17,7 +17,7 @@ architecture A of MyNand is
 		port (
 			X	: in	std_logic;
 			Y	: in	std_logic;
-			Z	: out	std_logic;
+			Z	: out	std_logic
 		);
 	end component MyAnd;
 
@@ -25,7 +25,7 @@ architecture A of MyNand is
 	component MyInv is
 		port (
 			X	: in	std_logic;
-			Z	: in	std_logic;
+			Z	: in	std_logic
 		);
 	end component MyInv;
 
